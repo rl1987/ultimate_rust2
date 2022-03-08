@@ -28,9 +28,10 @@ fn main() {
     // Hint 2: `x` will be a mutable reference, so remember to dereference it to use it
 
     let mut numbers = vec![1, 2, 3, 4];
-    for x in numbers.iter_mut() {
-         *x *= 3; // multiply the value by 3 via the mutable reference x
-    }
+    //for x in numbers.iter_mut() {
+    //     *x *= 3; // multiply the value by 3 via the mutable reference x
+    //}
+    numbers = numbers.iter_mut().map(|x| *x * 3).collect();
     println!("{:?}", numbers); // should print [3, 6, 9, 12]
 
     // 4. Uncomment the code below.  Take the vector of words and
