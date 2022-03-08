@@ -5,9 +5,9 @@
 // Once you've got the documentation here, run `cargo doc --no-deps --open` and take a look!
 
 //! A pumpkin is a cultivar of winter squash that is round with smooth, slightly ribbed skin, and 
-//! is most often deep yellow to orange in coloration.[1] The thick shell contains the seeds and pulp. 
+//! is most often deep yellow to orange in coloration. The thick shell contains the seeds and pulp. 
 //! The name is most commonly used for cultivars of Cucurbita pepo, but some cultivars of Cucurbita 
-//! maxima, C. argyrosperma, and C. moschata with similar appearance are also sometimes called "pumpkins".[1]
+//! maxima, C. argyrosperma, and C. moschata with similar appearance are also sometimes called "pumpkins".
 //! ![Pumpkin](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/FrenchMarketPumpkinsB.jpg/700px-FrenchMarketPumpkinsB.jpg)
 
 // 2. What about an image!? Add an image of a pumpkin to the end of the module-level documentation.
