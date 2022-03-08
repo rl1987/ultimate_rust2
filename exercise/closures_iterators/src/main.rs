@@ -15,10 +15,12 @@ fn main() {
     // (0, 1), it should return (1, 1). Run the code and make sure it works.
 
     let pairs = vec![(0, 1), (2, 3), (4, 5)];
+    /*
     pairs
         .into_iter()
         .map(|(a, b)| (a+1, b) )
         .for_each(|t| println!("{:?}", t));
+    */
 
     // 3. Uncomment the code below. There is a mutable vector named `numbers`. Use an iterator over
     // mutable references to multiply each of the values in `numbers` by 3.
@@ -40,12 +42,25 @@ fn main() {
     // Hint: .to_uppercase() is a method on `str` which returns a String
 
     let words = vec!["autobot", "beach", "car", "decepticon", "energon", "frothy"];
-    let transformed: Vec<String> = words.into_iter().filter(|w| w.contains("h")).map(|w| w.to_uppercase()).collect();  // do the stuff here
+    //let transformed: Vec<String> = words.into_iter().filter(|w| w.contains("h")).map(|w| w.to_uppercase()).collect();  // do the stuff here
+    
+    let mut transformed: Vec<String> = vec![];
+
+    for w in words.into_iter() {
+        if w.contains("h") {
+            transformed.push(w.to_uppercase());
+        }
+    }
+
     println!("Transformed: {:?}", transformed);
 
     // Challenge:
     //
     // - Rewrite the code in #2 as a for loop
+    for p in pairs.into_iter() {
+        println!("{:?}", (p.0 + 1, p.1));
+    }
+
     // - Rewrite the code in #3 in functional style (without a for loop).  Hint: There are multiple
     // ways to accomplish this, but they all end with an iterator consumer.
 }
