@@ -43,12 +43,12 @@ fn main() {
     // Hint: .to_uppercase() is a method on `str` which returns a String
 
     let words = vec!["autobot", "beach", "car", "decepticon", "energon", "frothy"];
-    //let transformed: Vec<String> = words.into_iter().filter(|w| w.contains("h")).map(|w| w.to_uppercase()).collect();  // do the stuff here
+    //let transformed: Vec<String> = words.into_iter().filter(|w| !w.contains("h")).map(|w| w.to_uppercase()).collect();  // do the stuff here
     
     let mut transformed: Vec<String> = vec![];
 
     for w in words.into_iter() {
-        if w.contains("h") {
+        if !w.contains("h") {
             transformed.push(w.to_uppercase());
         }
     }
